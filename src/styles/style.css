@@ -1,0 +1,156 @@
+body {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "League Spartan", sans-serif;
+  background: url(../images/bg-pattern-top-desktop.svg) no-repeat top -50% right
+      70%,
+    url(../images/bg-pattern-bottom-desktop.svg) no-repeat bottom 50% left 150%;
+  background-color: var(--white);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+  padding: 2rem;
+}
+
+.c-social-proof {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "presentation rating"
+    "testimonial testimonial";
+  place-items: center;
+  gap: 2rem;
+  margin: 5rem 10rem;
+  max-width: 1110px;
+}
+
+/* ========================== */
+.c-social-proof__presentation {
+  grid-area: presentation;
+  padding: 1rem 13rem 4.5rem 0;
+}
+.c-social-proof__heading {
+  font-weight: 700;
+  color: var(--very-dark-magenta);
+  font-size: 5.5rem;
+  line-height: .9;
+  margin-bottom: 2rem;
+}
+.c-social-proof__description {
+  color: var(--very-dark-magenta);
+  font-size: 1.8rem;
+}
+
+/* ========================== */
+.c-social-proof__rating {
+  grid-area: rating;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.c-social-proof__rate {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  padding: 1.5rem;
+  background-color: var(--light-grayish-magenta);
+  border-radius: 0.6rem;
+}
+.c-social-proof__rate::before {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 2rem;
+  background: url(../images/icon-star.svg) space;
+}
+.c-social-proof__rate-info {
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.c-social-proof__rate.report {
+  transform: translateX(15%);
+  margin-top: 1.5rem;
+}
+.c-social-proof__rate.best-tech {
+  transform: translateX(25%);
+  margin-top: 1.5rem;
+}
+
+/* ========================== */
+.c-social-proof__testimonial {
+  grid-area: testimonial;
+  display: flex;
+  gap: 3rem;
+}
+.c-social-proof__card {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: var(--very-dark-magenta);
+  border-radius: 1rem;
+  padding: 4rem;
+  transition: 0.5s ease-in-out;
+  box-shadow: 2px 5px 10px var(--soft-pink);
+}
+@media (min-width: 1024px) {
+  .c-social-proof__card:hover {
+    padding: 4rem;
+    box-shadow: 3px 7px 15px var(--very-dark-magenta);
+  }
+}
+.c-social-proof__card blockquote {
+  color: var(--white);
+}
+.c-social-proof__card figcaption {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+.c-social-proof__image-testimonie {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.c-social-proof__name {
+  color: var(--white);
+}
+.c-social-proof__buyer {
+  color: var(--dark-grayish-magenta);
+}
+.c-social-proof__card.first {
+  align-self: flex-start;
+  padding: 4rem 3rem;
+}
+.c-social-proof__card.second {
+  align-self: center;
+  transform: translateY(8%);
+}
+.c-social-proof__card.third {
+  align-self: flex-end;
+  transform: translateY(15%);
+}
+
+/* ########################## */
+
+.f-footer {
+  margin: 2rem;
+}
+
+.f-footer__attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.f-footer__link {
+  color: var(--dark-grayish-magenta);
+}
