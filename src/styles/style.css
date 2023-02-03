@@ -109,6 +109,7 @@ main {
 }
 .c-social-proof__card blockquote {
   color: var(--white);
+  font-weight: 500;
 }
 .c-social-proof__card figcaption {
   display: flex;
