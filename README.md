@@ -81,8 +81,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/social-proof-section-responsive-flexbox-and-grid-semantic-html-JaBsu1P5Ch)
+- Live Site URL: [Github pages](https://michel-moreira.github.io/social-proof-section/)
 
 ### Useful resources
 
